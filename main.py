@@ -534,7 +534,7 @@ if __name__ == "__main__":
                         help="path to log")
     parser.add_argument("--result_path", type=str, default="/mnt/NAS/AI_dev_team/users/matt/TTS/model_output/korean/style_equalizer_with_attention",
                         help="path to result checkpoint")
-    parser.add_argument("--resume", type=bool, default=False,
+    parser.add_argument("--resume", type=bool, default=True,
                         help="path to result checkpoint")
     args = parser.parse_args()
 
