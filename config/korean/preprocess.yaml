@@ -1,0 +1,35 @@
+dataset: "korean"
+
+path:
+  corpus_path: "/mnt/NAS/AI_dev_team/DB/TTS/Korean/original"
+  lexicon_path: "/mnt/NAS/AI_dev_team/DB/TTS/Korean/korean_lexicon.txt"
+  raw_path: "/mnt/NAS/AI_dev_team/DB/TTS/Korean/data"
+  preprocessed_path: "/mnt/NAS/AI_dev_team/DB/TTS/Korean/preprocessed"
+  alignment_path: "/mnt/NAS/AI_dev_team/DB/TTS/Korean/preprocessed/TextGrid"
+  stats_path: "/mnt/NAS/AI_dev_team/DB/TTS/Korean/preprocessed/stats.json"
+  symbol_path: "/mnt/NAS/AI_dev_team/DB/TTS/Korean/preprocessed/symbols.json"
+
+preprocessing:
+  val_size: 512 #4
+  text:
+    text_cleaners: ["english_cleaners"]
+    language: "en"
+  audio:
+    sampling_rate: 24000
+    max_wav_value: 32768.0
+  stft:
+    filter_length: 2048
+    hop_length: 300
+    win_length: 1200
+  mel:
+    n_mel_channels: 80
+    mel_fmin: 80
+    mel_fmax: 7600
+    normalization: True
+  pitch:
+    feature: "phoneme_level"
+    normalization: True
+    f0_max: 400.0
+  energy:
+    feature: "phoneme_level"
+    normalization: True

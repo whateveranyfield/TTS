@@ -1,0 +1,1 @@
+from tts.fastspeech2.fastspeech2 import FastSpeech2

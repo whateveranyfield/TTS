@@ -1,0 +1,13 @@
+##########################################################
+#                OTHER TRAINING SETTING                  #
+##########################################################
+grad_clip: 1.0            # gradient clipping norm
+grad_clip_type: 2.0
+grad_noise: false         # whether to use gradient noise injection
+accum_grad: 1             # gradient accumulation
+num_workers: 1            # number of workers of data loader
+train_dtype: float32      # dtype in training
+log_interval: null        # log interval in iterations
+keep_nbest_models: 5      # number of models to keep
+num_att_plot: 3           # number of attention figures to be saved in every check
+seed: 0                   # random seed number
